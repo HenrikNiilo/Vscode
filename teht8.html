@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<title>Teht8</title>
+<style>
+
+ body {
+        font-family: Calibri, sans-serif;
+        margin: 35px;
+        }
+        
+        
+        table {
+        border-collapse: collapse;
+        }
+        
+        
+        td {
+        padding: 8px 16px;
+        vertical-align: top;
+        text-align: left;
+        }
+        
+        .sarake-selite {
+        width: 155px;
+        }
+
+        .napit {
+        padding-top: 16px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+        padding: 5px 16px;
+        margin-right: 11px;
+        cursor: pointer;
+        }
+</style>
+</head>
+<body>
+
+<h2>Kurssille ilmoittautuminen</h2>
+<form action="http://savonia.fi" method="get">
+        
+<table>
+<tr>
+<td class="sarake-selite"><label for="nimi">Nimi:</label></td>
+<td><input type="text" id="nimi" name="nimi"></td>
+</tr>
+
+<tr>
+<td class="sarake-selite"><label for="vuosikurssi">Vuosikurssi:</label></td>
+<td><input type="password" id="vuosikurssi" name="vuosikurssi"></td>
+</tr>
+
+<tr>
+<td class="sarake-selite"><label for="course">Kurssin nimi:</label></td>
+<td>
+<select id="course" name="course">
+<option value="html_perusteet">HTML perusteet</option>
+<option value="css_muotoilu">CSS muotoilu</option>
+<option value="javascript_ohjelmointi">JavaScript ohjelmointi</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td class="sarake-selite"><label for="tyyppi">Kurssin tyyppi:</label></td>
+<td>
+<select id="tyyppi" name="tyyppi">
+<option value="paivatoteutus">Päivätoteutus</option>
+<option value="monimuoto">Monimuotototeutus</option>
+<option value="verkko-opinnot">Verkko-opinnot</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td class="sarake-selite"><label>Sukupuoli:</label></td>
+<td>
+<input type="radio" id="sp_mies" name="sukupuoli" value="mies">
+<label for="sp_mies">Mies</label>
+<br>
+<input type="radio" id="sp_nainen" name="sukupuoli" value="nainen">
+<label for="sp_nainen">Nainen</label>
+</td>
+</tr>
+
+<tr>
+<td class="sarake-selite"><label>Harrastukset:</label></td>
+<td>
+<input type="checkbox" id="h_urheilu" name="hobbies[]" value="urheilu" checked>
+<label for="h_urheilu">Urheilu</label><br>
+                    
+<input type="checkbox" id="h_musiikki" name="hobbies[]" value="musiikki" checked>
+<label for="h_musiikki">Musiikki</label><br>
+<input type="checkbox" id="h_pelit" name="hobbies[]" value="pelit" checked>
+<label for="h_pelit">Videopelit</label><br>
+                    
+<input type="checkbox" id="h_lukeminen" name="hobbies[]" value="lukeminen">
+<label for="h_lukeminen">Lukeminen</label>
+</td>
+</tr>
+
+<tr>
+<td class="sarake-selite"></td>
+<td class="napit">
+<input type="submit" value="Lähetä">
+<input type="reset" value="Tyhjennä">
+</td>
+</tr>
+</table>
+
+</form>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+{
+  "name": "web-i-tehtavat-1-11",
+  "version": "1.0.0",
+  "description": "Web-ohjelmointi I: tehtavat 1-11",
+  "main": "index.js",
+  "scripts": {
+  "test": "cypress run -s ./t1-11.cy.js -q"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+  "cypress": "13.6.6"
+  }
+}

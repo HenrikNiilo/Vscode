@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<title>Teht11</title>
+<style>
+        body {
+            font-family: Calibri, sans-serif;
+            margin: 33px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            padding: 6px 16px;
+            vertical-align: top;
+            text-align: left;
+        }
+        .sarake-selite {
+            width: 140px;
+        }
+        .napit {
+            padding-top: 16px;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 6px 15px;
+            margin-bottom: 11px;
+            display: block;
+            cursor: pointer;
+            width: 100px;
+            text-align: center;
+        }
+        .kuvanappi {
+            display: block;
+            margin-top: 10px;
+            cursor: pointer;
+            width: 30px;            
+            height: auto;
+        }
+</style>
+</head>
+<body>
+
+<form action="http://savonia.fi" method="get">
+        
+<table>
+            
+<tr>
+<td class="sarake-selite"><label for="laitos">Oppilaitos:</label></td>
+<td><input type="text" id="laitos" name="laitos" value="Savonia AMK" readonly></td>
+</tr>
+<tr>
+<td class="sarake-selite"><label for="nimi">Nimi:</label></td>
+<td><input type="text" id="nimi" name="nimi" value="Maija Mehiläinen"></td>
+</tr
+<tr>
+<td class="sarake-selite"><label for="vuosikurssi">Vuosikurssi:</label></td>
+<td><input type="password" id="vuosikurssi" name="vuosikurssi" value="1234"></td>
+</tr>
+
+            
+<tr>
+<td class="sarake-selite"><label for="course">Kurssin nimi:</label></td>
+<td>
+<select id="course" name="course" multiple size="5">
+<option value="Matematiikka">Matematiikka</option>
+<option value="Fysiikka">Fysiikka</option>
+<option value="Kemia">Kemia</option>
+<option value="Tietorakenteet">Tietorakenteet</option>
+<option value="Webohjelmointi">Webohjelmointi</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td class="sarake-selite"><label for="tyyppi">Kurssin tyyppi:</label></td>
+<td>
+<select id="tyyppi" name="tyyppi">
+<option value="Lahiopetus" selected>Lähiopetus</option>
+<option value="Monimuoto">Monimuotototeutus</option>
+<option value="Verkko-opinnot">Verkko-opinnot</option>
+</select>
+</td>
+</tr>
+
+            
+<tr>
+<td class="sarake-selite"><label>Sukupuoli:</label></td>
+<td>
+<input type="radio" id="sp_mies" name="sukupuoli" value="Mies">
+<label for="sp_mies">Mies</label><br>
+                    
+<input type="radio" id="sp_nainen" name="sukupuoli" value="Nainen">
+<label for="sp_nainen">Nainen</label><br>
+<input type="radio" id="sp_muu" name="sukupuoli" value="Muu" checked>
+<label for="sp_muu">Muu</label>
+</td>
+</tr>
+<tr>
+<td class="sarake-selite"><label>Harrastukset:</label></td>
+<td>
+<input type="checkbox" id="h_pelaaminen" name="hobbies[]" value="Pelaaminen">
+<label for="h_pelaaminen">Pelaaminen</label><br>
+                    
+<input type="checkbox" id="h_lenkkeily" name="hobbies[]" value="Lenkkeily">
+<label for="h_lenkkeily">Lenkkeily</label><br>
+                    
+<input type="checkbox" id="h_kuntosali" name="hobbies[]" value="Kuntosali" checked>
+<label for="h_kuntosali">Kuntosali</label><br>
+                    
+<input type="checkbox" id="h_lukeminen" name="hobbies[]" value="Lukeminen">
+<label for="h_lukeminen">Lukeminen</label>
+</td>
+</tr>
+
+<tr>
+<td class="sarake-selite"></td>
+<td class="napit">
+<input type="reset" value="Tyhjennä">
+<input type="submit" value="Lähetä">
+                    
+<input type="image" src="nappi_kuva.png" alt="Lähetä" class="kuvanappi">
+</td>
+</tr>
+</table>
+
+</form>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<title>Teht6</title>
+<style>
+        body {
+        font-family: Calibri, sans-serif;
+        margin: 32px;
+        }
+
+        h1::first-letter {
+        font-size: 200%;
+        color: grey;
+        }
+
+        #linkit a {
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        }
+
+        #linkit li:first-child {
+        background-color: yellow;
+        }
+
+        #linkit li:last-child {
+        color: red;
+        }
+  
+        #linkit li:last-child a {
+        color: red;
+        }
+
+        #linkit li:nth-child(even) {
+        background-color: lightgray;
+        }
+
+        #linkit a:focus {
+        background-color: black;
+        color: white !important;             
+        outline: none;
+        }
+
+        
+        #linkit li::before {
+        content: "Linkki: ";
+        font-weight: bold;
+        }
+
+        
+        #linkit a:hover {
+        font-size: 47px;
+        color: grey !important;
+        }
+
+        
+        #linkit a:visited {
+        font-size: 3px;
+        color: purple; 
+        }
+</style>
+</head>
+<body>
+
+    
+<h1>Tämä on h1-elementti, jonka 1. kirjain on aina isolla ja harmaana.</h1>
+
+<ul id="linkit">
+<li><a href="https://yle.fi" target="_blank">yle</a></li>
+<li><a href="https://nhl.com" target="_blank">nhl</a></li>
+<li><a href="https://savonia.fi" target="_blank">savonia</a></li>
+<li><a href="https://uef.fi" target="_blank">uef</a></li>
+</ul>
+
+<!-- 
+Selvitys kohtaan 1. 
+      
+Miksi selain ei tottele vierailu linkin "visited" fonttikoon (3px) muuttamista?
+      
+VASTAUS
+ 
+Selaimissa tietoturva- ja yksityisyysrajoitus "Privacy restriction". 
+
+Jos CSS-tyyleillä saisi muuttaa vierailu linkin kokoa, paikkaa tai asettelua. 
+
+Haitalliset verkkosivustot voisivat Javascriptin avulla esim. tutkia 
+solun tai linkin leveyttä/korkeutta. 
+
+Voisivat myös automaattisesti/salaa tutkia käyttäjän selaushistorian, mitkä linkit ovat vaihtaneet kokoa.
+      
+Nykyiset selaimet sallivat visited-pseudoluokassa vain väreihin 
+liittyviä muutoksia kuten color ja background-color. 
+
+Kaikki sivun asetteluun vaikuttavat tyylit, kuten font-size, padding, margin ja display, jätetään selaimen toimesta kokonaan huomiotta.
+-->
+
+</body>
+</html>
+
+
+
+
+
+

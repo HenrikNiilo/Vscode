@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<title>Teht1</title>
+<style>
+        
+body, table {
+font-family: Calibri, sans-serif;
+        }
+
+        
+table {
+            border-collapse: separate; 
+            border-spacing: 2px;       
+            border: 1px solid black;
+            width: 500px;  
+	    margin-top: 25px;
+        }
+
+            th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+           .linkki-solu {
+            text-align: left;
+        }
+
+           .sarake-ika { width: 42px; }
+           .sarake-vuodet { width: 52px; }
+           .sarake-data { width: 120px; }
+
+        
+           td ol {
+           text-align: left;
+           margin: 0;
+           padding-left: 25px;
+        }
+
+        
+        .korostettu-rivi td {
+         font-weight: bold;
+         font-style: italic;
+         font-size: 30px;
+        }
+</style>
+</head>
+<body>
+
+<table>
+        
+<tr>
+        <th rowspan="2" colspan="2" class="sarake-ika">Henkilöstö</th>
+        <th colspan="3">Koulutus</th>
+        </tr>
+        
+        <tr>
+        <th class="sarake-data">Muu</th>
+        <th class="sarake-data">Ammatti-<br>korkeakoulu</th>
+        <th class="sarake-data">Korkeakoulu</th>
+        </tr>
+        
+        
+        <tr>
+        <th rowspan="3" class="sarake-ika">Ikä</th>
+        <th class="sarake-vuodet">- 30</th>
+        <td class="linkki-solu"><a href="https://google.com" target="_blank">Google</a></td>
+        <td class="linkki-solu"><a href="https://uef.fi" target="_blank">UEF</a></td>
+        <td class="linkki-solu"><a href="https://savonsanomat.fi" target="_blank">Savon sanomat</a>
+       </td>
+       </tr>
+
+       <tr>
+       <th class="sarake-vuodet">30 - 50</th>
+       <td>
+       <ol>
+       <li>Yksi</li>
+       <li>Kaksi</li>
+       <li>Kolme</li>
+       </ol>
+       </td>
+       <td>
+       <ol>
+       <li>Omena</li>
+       <li>Banaani</li>
+       <li>Persikka</li>
+       </ol>
+       </td>
+       <td>
+       <ol>
+       <li>Audi</li>
+       <li>BMW</li>
+       <li>Toyota</li>
+       </ol>
+       </td>
+</tr>
+        
+<tr class="korostettu-rivi">
+<th class="sarake-vuodet">50 -</th>
+<td>Javascript</td>
+<td>rokkaa</td>
+<td>selaimessa</td>
+</tr>
+</table>
+</body>
+</html>
+
+
